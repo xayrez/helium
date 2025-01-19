@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fullscreen Iframe</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        iframe {
+            width: 100%;
+            height: 100vh;
+            border: none;
+            display: block;
+        }
+        header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            z-index: 1000;
+        }
+        .logo-left {
+            height: 40px;
+            width: auto;
+        }
+        .logo-x {
+            width: 32px;
+            height: 32px;
+            fill: #FFFFFF;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="Başlıksız-1 (1).png" alt="Left Logo" class="logo-left">
+        <a href="https://x.com/heliumprotocol" target="_blank">
+            <svg viewBox="0 0 24 24" class="logo-x">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+            </svg>
+        </a>
+    </header>
+    <iframe 
+        src="https://huge-8ruko15uwa.peachworlds.com/" 
+        allowfullscreen
+        sandbox="allow-same-origin allow-scripts allow-popups allow-forms allow-top-navigation"
+    ></iframe>
+</body>
+</html>
